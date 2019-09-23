@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.model.User;
+import com.model.Credentials;
 
 @Controller 
 @RequestMapping("/user")
@@ -47,11 +48,11 @@ public class UserController {
 	//login mechanisms
 		@RequestMapping(path="/login", method = RequestMethod.GET) 
 		public ModelAndView displayLoginPage() { 
-			return new ModelAndView("loginPage", "user", new User("","","","","",""));
+			return new ModelAndView("loginPage", "user", new Credentials("", ""));
 			}
 		  
 		@RequestMapping(path="/loginSuccess", method = RequestMethod.POST)
-		public ModelAndView loginUser(@Valid @ModelAttribute("user") User user, BindingResult result) { 
+		public ModelAndView loginUser(@Valid @ModelAttribute("user") Credentials user, BindingResult result) { 
 			//validate the form 
 			if(result.hasErrors()) { 
 				//return to login form to show login errors
