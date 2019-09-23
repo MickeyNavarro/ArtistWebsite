@@ -62,10 +62,10 @@ text-align: center;
 </ul>
 
 	<c:if test ="${user.username != ''}"> 	
-		<h2>Welcome to the crew, ${user.username}!</2>
+		<h2>Welcome to the crew, ${user.username}!</h2>
 	</c:if>
 	<c:if test ="${user.username == ''}"> 	
-		<h2>Welcome to the site!</2>
+		<h2>Welcome to the site!</h2>
 	</c:if>
 </body>
 </html>
