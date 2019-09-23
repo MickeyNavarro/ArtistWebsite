@@ -47,12 +47,12 @@ li a {
 li a:hover {
   background-color: #111;
 }
-
 </style>
 </head>
 <body>
 <ul>
   <li><b>RGO Crew</b></li>
+  <li><b><a href="home">RGO Crew</a></b></li>
   <li><a href="register">Register</a></li>
   <li><a href="login">Login</a></li>
 </ul>

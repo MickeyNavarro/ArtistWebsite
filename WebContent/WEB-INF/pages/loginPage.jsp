@@ -13,10 +13,51 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Login</title>
+	
+	<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li a{
+  float: right;
+}
+
+li b {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+</style>
 </head>
 <body>
+<ul>
+  <li><b><a href="home">RGO Crew</a></b></li>
+  <li><a href="register">Register</a></li>
+  <li><a href="login">Login</a></li>
+</ul>
+
 	<h2>Login</h2>
-	<form:form method= "POST" modelAttribute="user" action="login">
+	<form:form method= "POST" modelAttribute="user" action="loginSuccess">
 		<table> 
 			<tr>
 				<td><form:label path="username">Username:</form:label></td>
