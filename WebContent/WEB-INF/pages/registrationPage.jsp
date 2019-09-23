@@ -32,6 +32,7 @@ li b {
   display: block;
   color: white;
   text-align: center;
+  padding: 14px 16px;
   text-decoration: none;
 }
 
@@ -50,6 +51,7 @@ li a:hover {
 </head>
 <body>
 <ul>
+  <li><b>RGO Crew</b></li>
   <li><b><a href="home">RGO Crew</a></b></li>
   <li><a href="register">Register</a></li>
   <li><a href="login">Login</a></li>
