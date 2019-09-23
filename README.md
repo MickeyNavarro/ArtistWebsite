@@ -10,6 +10,6 @@ We are currently on Milestone 2. This Milestone requires us to demonstrate the u
   
   View: homePage, loginPage, registrationPage
   
-  Controller: UserController, CredentialsController
+  Controller: UserController
 
 With the use of these pages, we have created these login and registration modules. 
